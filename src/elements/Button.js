@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-let Button = styled.button`
+const Button = styled.button`
     display: inline-flex; 
     justify-content: center; align-items: center;
     border-width: 1px;
