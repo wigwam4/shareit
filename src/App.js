@@ -10,8 +10,8 @@ function App() {
 		<div className="App">
 			<Router>
 				<Routes>
-					<Route path="/" element={ <ReviewLists data={ ReviewData } /> } />
-					<Route path="/write/:id" element={ <ReviewWrite data={ AvailableData } /> } />
+					<Route path="/" element={ <ReviewLists ReviewData={ ReviewData } AvailableData={ AvailableData } /> } />
+					<Route path="/write/:id" element={ <ReviewWrite ReviewData={ ReviewData } /> } />
 				</Routes>
 			</Router>
 		</div>

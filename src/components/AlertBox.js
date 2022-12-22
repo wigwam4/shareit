@@ -1,0 +1,14 @@
+import styled from 'styled-components';
+import IconAlertBox from '../assets/images/icon_alertbox.png';
+
+const AlertBox = styled.p`
+    padding: 10px 10px 10px 32px;
+    color: #5E5E5E; font-size: 1.3rem; line-height: 1.461em;
+    background: #F8F9FB url(${ IconAlertBox }) no-repeat left 12px top 12px;
+    border-radius: 4px;
+    @media screen and (max-width:480px){
+        margin: 0 18px;
+    }
+`
+
+export { AlertBox };
