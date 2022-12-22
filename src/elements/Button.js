@@ -31,12 +31,12 @@ const Button = styled.button`
     ${props => props.lg && css`
         padding: 0 16px;
         width: 204px; height: 50px;     
-        font-size: 1.8rem; line-height: 1.444em;
+        font-size: 1.8rem;
     `}
     ${props => props.sm && css`
         padding: 0 11px;
         height: 30px;
-        font-size: 1.3rem; font-weight: 500; line-height: 1.461em;
+        font-size: 1.3rem; font-weight: 500;
     `}
 `
 
