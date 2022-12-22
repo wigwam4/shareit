@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ImageBox } from './ImageBox';
 import BgAttachFileOuter from '../assets/images/bg_attachfile.png';
 import BgFileDel from '../assets/images/btn_delete.png';
+import BgFileDelMb from '../assets/images/btn_delete_mb.png';
 
 const AttachFileOuter = styled.div`
     display: inline-block;
@@ -16,6 +17,10 @@ const AttachFileOuter = styled.div`
         background: #F4F5F6 url(${ BgAttachFileOuter }) no-repeat center;
         border: 1px dashed #D8DEE5;
         border-radius: 8px;
+        @media screen and (max-width:480px){
+            width: 98px; height: 98px;
+            background-size: 30px;
+        }
     }
 `
 const FileAttached = styled.div`
@@ -23,6 +28,9 @@ const FileAttached = styled.div`
     display: inline-block;
     width: 180px; height: 180px; 
     vertical-align: top;
+    @media screen and (max-width:480px){
+        width: 98px; height: 98px;
+    }
     div {
         height: 100%;
         background: #F4F5F6;
@@ -36,6 +44,11 @@ const BtnDel = styled.button`
     background: #fff url(${ BgFileDel }) no-repeat center;
     border: 1px solid #BEC2C8;
     border-radius: 50%;
+    @media screen and (max-width:480px){
+        top: -8px; right: -8px;
+        width: 24px; height: 24px;
+        background-image: url(${ BgFileDelMb });
+    }
 `
 
 const AttachFile = () => {

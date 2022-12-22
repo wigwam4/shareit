@@ -20,7 +20,7 @@ const ReviewWrite = ({ data }) => {
 	return (
 		<>
 			<ContentTitle className={ module.dd }>후기 상세</ContentTitle>
-			<div style={{ marginTop: '22px', marginBottom: '24px', textAlign: 'right' }}>
+			<div className={ module.btn_toparea }>
 				<Button secondary sm>삭제</Button>
 			</div>
 			<div className={ module.data_box }>
@@ -75,7 +75,6 @@ const ReviewWrite = ({ data }) => {
 			</div>
 			<div className={ module.review_section }>
 				<p className={ module.review_question }>포토 첨부 (최대 5장)</p>
-				{/* AttachFile, FileAttached, FileDel */}
 				<div>
 					<AttachFile />
 					<FileAttached>
@@ -85,15 +84,6 @@ const ReviewWrite = ({ data }) => {
 						<BtnDel />
 					</FileAttached>
 				</div>
-
-
-
-
-
-
-				{/* <ImageBox className={ module.img_box }>
-					<img src={ datum.product.hostImage } alt={ datum.product.productName } />
-				</ImageBox> */}
 				<p className={ module.alert_message }>후기는 6자 이상 입력해 주세요.</p>
 			</div>
 			<div className={ module.review_section }>

@@ -37,9 +37,3 @@ body {
 ul, ol, li {
 	list-style: none;
 }
-
-@media screen and (max-width:1024px) {
-	html {
-		font-size: 58.333%;
-	}
-}

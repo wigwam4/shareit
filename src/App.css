@@ -1,5 +1,16 @@
 .App {
     margin: 0 auto; padding: 43px;
-    width: 1045px;
+    width: 1045px; max-width: 100%;
     overflow: hidden;
+}
+
+@media screen and (max-width:768px){
+   .App {
+    	padding: 36px;
+   } 
+}
+@media screen and (max-width:480px){
+    .App {
+    	padding: 0;
+   } 
 }
