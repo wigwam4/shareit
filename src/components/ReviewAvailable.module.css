@@ -22,7 +22,7 @@
 }
 .data_box dl {
     margin-bottom: 24px; padding: 15px 30px 20px;
-    color: #979797; font-size: 1.2rem; line-height: 1.416em;
+    color: #979797; font-size: 1.4rem; line-height: 1.428em;
     background: #FCFCFC;
     border: 1px solid #ECECEC;
     border-radius: 4px;
@@ -35,7 +35,7 @@
     margin-bottom: 0;
 }
 .data_box dt {
-    width: 60px;
+    width: 66px;
 }
 .data_box dd {
     color: #5e5e5e;
@@ -50,7 +50,8 @@
         margin-bottom: 16px; 
     }
     .data_box dl {
-        padding: 0; padding-top: 14px; 
+        margin-bottom: 20px; padding: 0; padding-top: 14px; 
+        font-size: 1.2rem;
         background: #fff;
         border: none; border-top: 1px solid #D8DEE5;
     }

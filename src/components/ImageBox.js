@@ -6,7 +6,7 @@ const ImageBox = styled.div`
     overflow: hidden;
     
     img {
-        object-fit: contain;
+        object-fit: cover;
     }
 `
 

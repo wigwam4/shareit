@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 const Button = styled.button`
     display: inline-flex; 
     justify-content: center; align-items: center;
-    font-weight: 500;
+    font-family: NotoSansCJK, sans-serif; font-weight: 500;
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
@@ -16,8 +16,8 @@ const Button = styled.button`
         background: #0077ED;
         border-color: #0077ED;
         &:hover {
-            background: #0064ed;
-            border-color: #0064ed;
+            background: #0061c1;
+            border-color: #0061c1;
         }
     `}
     ${props => props.secondary && css`
@@ -25,8 +25,17 @@ const Button = styled.button`
         background: #fff;
         border-color: #d8dee5;
         &:hover {
-            background: #f8f8f8;
-            border-color: #f8f8f8;
+            background: #F4F5F6;
+            border-color: #F4F5F6;
+        }
+    `}
+    ${props => props.xl && css`
+        padding: 0 20px;
+        min-width: 204px; height: 56px;     
+        font-size: 1.8rem;
+        @media screen and (max-width:480px){
+            min-width: auto; height: 40px;
+            font-size: 1.4rem;
         }
     `}
     ${props => props.lg && css`

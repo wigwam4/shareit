@@ -38,7 +38,7 @@ const ReviewWrite = ({ ReviewData }) => {
 						<div>
 							<dt>상품명</dt>
 							<dd>
-								<Label blue>{ datum.product.productType }</Label>
+								<Label blue style={{ marginRight: '10px' }}>{ datum.product.productType }</Label>
 								{ datum.product.productName }
 							</dd>
 						</div>

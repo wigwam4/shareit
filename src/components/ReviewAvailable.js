@@ -25,7 +25,7 @@ const ReviewAvailable = ({ AvailableData }) => {
 								<div>
 									<dt>상품명</dt>
 									<dd>
-										<Label blue>{ item.product.productType }</Label>
+										<Label blue style={{ marginRight: '10px' }}>{ item.product.productType }</Label>
 										{ item.product.productName }
 									</dd>
 								</div>
@@ -35,9 +35,15 @@ const ReviewAvailable = ({ AvailableData }) => {
 										{ item.review.reserveAt }
 									</dd>
 								</div>
+								<div>
+									<dt>작성기한</dt>
+									<dd>
+										{ item.review.deadLine }
+									</dd>
+								</div>
 							</dl>
 						</div> 
-						<Button secondary lg w100>후기 쓰기</Button>
+						<Button secondary xl w100>후기 쓰기</Button>
 					</li>
 				))}
 			</ul>
