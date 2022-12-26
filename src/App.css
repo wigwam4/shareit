@@ -1,16 +1,16 @@
-.App {
+.contents_wrap {
     margin: 0 auto; padding: 43px;
     width: 1045px; max-width: 100%;
     overflow: hidden;
 }
 
-@media screen and (max-width:768px){
-   .App {
-    	padding: 36px;
+@media screen and (max-width:1024px){
+   .contents_wrap {
+    	padding: 0 0 86px;
    } 
 }
 @media screen and (max-width:480px){
-    .App {
-    	padding: 0 0 36px;
+   .contents_wrap {
+    	padding: 0 0 80px;
    } 
 }

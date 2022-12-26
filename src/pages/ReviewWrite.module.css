@@ -18,6 +18,7 @@
     border-radius: 4px;
 }
 .data_toparea p {
+    padding-top: 4px;
     color: #878787; font-size: 1.6rem; font-weight: 700; line-height: 1.437em;
 }
 .data_toparea strong {
@@ -54,6 +55,18 @@
     margin-top: 8px;
     color: #FF7070; font-size: 1.2rem; line-height: 1.666em;
 }
+.tiptext_area {
+    position: relative;
+    height: 28px;
+}
+.tiptext_area .alert_message {
+    position: absolute; bottom: 0; left: 0;
+}
+.tiptext_area .tiptext_right {
+    position: absolute; bottom: 0; right: 0;
+    margin-top: 8px;
+    color: #AEAEAE; font-size: 1.4rem; line-height: 1.428em;
+}
 .starcount_wrap {
     color: #878787; font-size: 1.6rem; line-height: 1.25em; text-align: center;
 }
@@ -81,9 +94,12 @@
     margin-bottom: 25px;
     color: #232323; font-size: 1.5rem; line-height: 1.466em;
 }
+.list_dot {
+    padding-left: 4px;
+}
 .list_dot li {
     position: relative;
-    margin-bottom: 14px; padding-left: 14px;
+    margin-bottom: 14px; padding-left: 11px;
     color: #5E5E5E; font-size: 1.4rem; line-height: 1.428em;
 }
 .list_dot li:last-child {
@@ -97,15 +113,6 @@
     background: #5E5E5E;
     border-radius: 2px;
 }
-.btn_area {
-    margin-top: 60px;
-}
-.btn_area button {
-    margin-right: 18px;
-}
-.btn_area button:last-child {
-    margin-right: 0;
-}
 .checkbox {
     padding: 14px 0;
 }
@@ -115,33 +122,60 @@
 .checkbox label {
     display: block;
     padding-left: 30px; padding-right: 17px;
-    min-height: 18px;
+    min-height: 22px;
     color: #232323; font-size: 1.6rem; line-height: 1.437em;
-    background-image: url(../assets/images/img_checkbox.png), url(../assets/images/icon_arrow_right.png);
+    background-image: url(../assets/images/img_checkbox.svg), url(../assets/images/icon_arrow_right.svg);
     background-repeat: no-repeat;
+    background-size: 18px, 8px;
     background-position: left top 2px, right 5px center;
 }
-/* ==== 체크박스 체크시 이미지 변경 요망 ==== */
 .checkbox input:checked + label {
-    background-image: url(../assets/images/img_checkbox.png), url(../assets/images/icon_arrow_right.png);
+    background-image: url(../assets/images/img_checkbox_on.svg), url(../assets/images/icon_arrow_right.svg);
 }
-/* ==== 체크박스 체크시 이미지 변경 요망 ==== */
+.btn_area {
+    margin-top: 60px;
+}
+.btn_area button {
+    margin-right: 18px;
+}
+.btn_area button:last-child {
+    margin-right: 0;
+}
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     .btn_toparea {
-        padding: 18px 0;
+        padding: 18px 24px;
     }
-    .review_section {
-        padding: 42px 0;
+    .data_toparea {
+        padding: 30px 24px;
+    }
+    .data_box dl {
+        padding: 18px 24px;
     }
     .starcount_wrap {
         font-size: 1.4rem;
     }
+    .review_section {
+        padding: 48px 24px;
+    }
     .starcount_item span {
         width: 50px; height: 50px;
     }
+    .checkbox {
+        padding: 18px 24px;
+    }
+    .notice_box {
+        padding: 36px 24px;
+    }
     .btn_area {
-        margin-top: 36px;
+        position: fixed; bottom: 0; left: 0; 
+        display: flex;
+        margin: 0; padding: 18px 24px;
+        width: 100%;
+        background: #fff;
+    }
+    .btn_area button {
+        flex: 1;
     }
 }
 
@@ -159,14 +193,15 @@
         padding: 36px 18px;
     }
     .checkbox {
-        padding: 14px 18px;
+        padding: 16px 23px 16px 20px;
+    }
+    .notice_box {
+        padding: 24px 18px;
     }
     .btn_area {
-        display: flex;
-        margin-top: 0; padding: 10px 18px 20px;
+        padding: 10px 18px 20px;
     }
     .btn_area button {
         margin-right: 10px;
-        flex: 1;
     }
 }

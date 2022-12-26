@@ -18,7 +18,7 @@ const ReviewDone = ({ ReviewData }) => {
 			[id]: !prevIsReplyOn[id]
 		}));
 	}
-
+	
 	return (
 		<>
 			<ul className={ module.review_list }>

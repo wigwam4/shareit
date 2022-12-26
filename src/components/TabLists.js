@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Tabs = styled.div`
     margin-top: 24px; margin-bottom: 54px;
-	@media screen and (max-width:480px){
+	@media screen and (max-width:1024px){
 		display: flex;
         margin: 0;
     }
@@ -21,18 +21,20 @@ const Item = styled.button`
 	&.on {
 		color: #232323;
 	}
-	@media screen and (max-width:768px){
-		margin-right: 36px;
-    }
-	@media screen and (max-width:480px){
+	@media screen and (max-width:1024px){
 		display: flex;
 		margin-right: 0;
-		height: 50px;
-        flex: 1; justify-content: center; align-items: center;
+		height: 70px;
+        flex: 1; justify-content: center; 
+		font-size: 1.8rem; align-items: center;
 		border-bottom: 2px solid #D8DEE5;
 		&.on {
 			border-color: #232323;
 		}
+    }
+	@media screen and (max-width:480px){
+		height: 50px;
+		font-size: 1.6rem; 
     }
 `
 

@@ -33,6 +33,10 @@ const Button = styled.button`
         padding: 0 20px;
         min-width: 204px; height: 56px;     
         font-size: 1.8rem;
+        @media screen and (max-width:1024px){
+            height: 50px;
+            font-size: 1.7rem;
+        }
         @media screen and (max-width:480px){
             min-width: auto; height: 40px;
             font-size: 1.4rem;

@@ -18,6 +18,7 @@
     border-radius: 4px;
 }
 .data_toparea p {
+    padding-top: 4px;
     color: #232323; font-size: 1.6rem; font-weight: 700; line-height: 1.437em;
 }
 .data_toparea strong {
@@ -61,14 +62,14 @@
     display: inline-block;
     margin-left: 20px; padding-left: 16px;
     font-size: 1.6rem; line-height: 1.437em;
-    background: url(../assets/images/icon_starcount.png) no-repeat center left;
+    background: url(../assets/images/icon_starcount.svg) no-repeat center left; background-size: 12px;
 }
 .like_count {
     display: inline-block;
     margin-left: 8px; padding-left: 27px; padding-right: 11px;
     height: 24px;
     color: #AEAEAE; font-size: 1.2rem; line-height: 24px;
-    background: #ECECEC url(../assets/images/icon_likecount.png) no-repeat left 11px center;
+    background: #ECECEC url(../assets/images/icon_likecount.svg) no-repeat left 11px center; background-size: 12px;
     border-radius: 18px;
 }
 .btn_accordion {
@@ -76,7 +77,7 @@
     margin-left: 23px;
     width: 16px; height: 10px;
     font-size: 0; line-height: 0;
-    background: url(../assets/images/btn_accordion.png) no-repeat center; background-size: contain;
+    background: url(../assets/images/btn_accordion.svg) no-repeat center; background-size: 16px;
     transition: 0.3s;
 }
 .review_list li > dl dd {
@@ -109,28 +110,46 @@
 .review_list li > dl dd.on p {
     opacity: 1;
 }
-
-
-@media screen and (max-width:480px){
+@media screen and (max-width:1024px){
     .review_list > li {
         margin-bottom: 0; padding: 0;
         border-bottom: 8px solid #F4F5F6;
     }
     .data_toparea {
-        margin-bottom: 0; padding: 24px 18px 18px;
+        margin-bottom: 0; padding: 36px 24px 24px;
     }
     .data_box {
         margin-bottom: 0;
     }
     .data_box dl {
-        padding: 14px 18px 20px; 
-        font-size: 1.2rem;
+        padding: 26px 24px 28px; 
         background: #fff;
         border: none; 
         border-top: 1px solid #D8DEE5; border-bottom: 1px solid #D8DEE5;
     }
     .review_list li > dl dt {
-        padding-right: 18px;
+        padding-left: 24px; padding-right: 24px;
+        font-size: 1.6rem;
+    }
+    .review_list li > dl dd p {
+        padding: 26px 24px;
+        font-size: 1.5rem;
+    }
+    .review_list li > dl dd strong {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:480px){
+    .data_toparea {
+        padding: 24px 18px 18px;
+    }
+    .data_box dl {
+        padding: 14px 18px 20px; 
+        font-size: 1.2rem;
+    }
+    .review_list li > dl dt {
+        padding-left: 18px; padding-right: 18px;
         font-size: 1.4rem;
     }
     .star_count {
@@ -144,7 +163,6 @@
         font-size: 1.4rem;
     }
     .review_list li > dl dd strong {
-        margin-bottom: 15px;
         font-size: 1.3rem;
     }
 }

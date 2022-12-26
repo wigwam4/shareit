@@ -72,7 +72,10 @@ const ReviewWrite = ({ ReviewData }) => {
 						maxLength={ 10 }
 						placeholder='서비스 이용과 무관하거나 저작권 침해, 욕설, 광고, 음란, 불법적인 후기는 통보 없이 삭제 및 적립 혜택이 회수 될 수 있습니다.'
 					></Textarea>
-					<p className={ module.alert_message }>후기는 6자 이상 입력해 주세요.</p>
+					<div className={ module.tiptext_area }>
+						<p className={ module.alert_message }>후기는 6자 이상 입력해 주세요.</p>
+						<span className={ module.tiptext_right }>0/1,000</span>
+					</div>
 				</div>
 				<div className={ module.review_section }>
 					<p className={ module.review_question }>포토 첨부 (최대 5장)</p>
@@ -85,7 +88,10 @@ const ReviewWrite = ({ ReviewData }) => {
 							<BtnDel />
 						</FileAttached>
 					</div>
-					<p className={ module.alert_message }>후기는 6자 이상 입력해 주세요.</p>
+					<div className={ module.tiptext_area }>
+						<p className={ module.alert_message }>이미지 파일만 등록해 주세요.</p>
+						<span className={ module.tiptext_right }>포토당 최대 15MB</span>
+					</div>
 				</div>
 				<div className={ module.review_section }>
 					<p className={ module.review_question }>판매자에게 전달하고 싶은 메시지</p>
@@ -95,6 +101,9 @@ const ReviewWrite = ({ ReviewData }) => {
 						maxLength={ 10 }
 						placeholder='서비스 이용과 무관하거나 저작권 침해, 욕설, 광고, 음란, 불법적인 후기는 통보 없이 삭제 및 적립 혜택이 회수 될 수 있습니다.'
 					></Textarea>
+					<div className={ module.tiptext_area }>
+						<span className={ module.tiptext_right }>0/1,000</span>
+					</div>
 				</div>
 				<p className={ module.checkbox }>
 					<input id='agreement' type='checkbox' />
