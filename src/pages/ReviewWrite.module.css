@@ -158,6 +158,12 @@
     .review_section {
         padding: 48px 24px;
     }
+    .review_section.section_full {
+        padding: 48px 0;
+    }
+    .review_section.section_full .review_question, .review_section.section_full .tiptext_area {
+        margin-left: 24px; margin-right: 24px;
+    }
     .starcount_item span {
         width: 50px; height: 50px;
     }

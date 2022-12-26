@@ -57,8 +57,11 @@ const ReviewDone = ({ ReviewData }) => {
 							</dl>
 						</div> 
 						<dl>
-							<dt
-								className={ isReviewOn[item.seq] ? `${ module.on }` : undefined }
+							<dt 
+								className={ isReviewOn[item.seq] 
+									? `${ module.on }` 
+									: undefined 
+								}
 								onClick={()=>handleReviewClick(item.seq)}	
 							>
 								<div>
@@ -73,19 +76,19 @@ const ReviewDone = ({ ReviewData }) => {
 									</span>
 								</div>
 							</dt>
-							{isReviewOn[item.seq]
-							? <dd className={ module.on }>
+							<dd className={ isReviewOn[item.seq] 
+								? `${ module.on }` 
+								: undefined }
+							>
 								<p>
 									{ item.review.review }
 								</p>
 							</dd>
-							: <dd>
-								<p>
-									{ item.review.review }
-								</p>
-							</dd>}
 							<dt
-								className={ isReplyOn[item.seq] ? `${ module.on }` : undefined }
+								className={ isReplyOn[item.seq] 
+									? `${ module.on }` 
+									: undefined
+								}
 								onClick={()=>handleReplyClick(item.seq)}
 							>
 								판매자 답변
@@ -93,19 +96,17 @@ const ReviewDone = ({ ReviewData }) => {
 									{ isReplyOn ? '닫기' : '열기' }
 								</span>
 							</dt>
-							{isReplyOn[item.seq]
-							? <dd className={ `${ module.review_reply } ${ module.on }` }>
+							<dd
+								className={ isReplyOn[item.seq] 
+									? `${ module.review_reply } ${ module.on }` 
+									: `${ module.review_reply }`
+								}
+							>
 								<p>
 									<strong>{ item.product.hostName }</strong>
 									{ item.review.reply }
 								</p>
 							</dd>
-							: <dd className={ module.review_reply }>
-								<p>
-									<strong>{ item.product.hostName }</strong>
-									{ item.review.reply }
-								</p>
-							</dd>}
 						</dl>
 					</li>
 				))}

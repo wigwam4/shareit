@@ -78,13 +78,19 @@
     width: 16px; height: 10px;
     font-size: 0; line-height: 0;
     background: url(../assets/images/btn_accordion.svg) no-repeat center; background-size: 16px;
-    transition: 0.3s;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .review_list li > dl dd {
-    height: 0;
+    max-height: 0;
     background: #F8F9FB;
     border-bottom: none;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     overflow: hidden;
 }
 .review_list li > dl dd.review_reply {
@@ -93,6 +99,10 @@
 .review_list li > dl dd p {
     padding: 24px 18px;
     color: #5E5E5E; font-size: 1.6rem; line-height: 1.437em; 
+    -webkit-transition: 0.5s 0.2s ease-in-out;
+    -moz-transition: 0.5s 0.2s ease-in-out;
+    -o-transition: 0.5s 0.2s ease-in-out;
+    transition: 0.5s 0.2s ease-in-out;
     opacity: 0;
 }
 .review_list li > dl dd strong {
@@ -101,11 +111,15 @@
     color: #232323; font-size: 1.5rem; font-weight: 500; line-height: 1.466em;
 }
 .review_list li > dl dt.on .btn_accordion {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 .review_list li > dl dd.on {
-    height: auto;
+    max-height: 300px;
     border-bottom: 1px solid #D8DEE5;
+    overflow-y: auto;
 }
 .review_list li > dl dd.on p {
     opacity: 1;

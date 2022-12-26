@@ -7,7 +7,10 @@ const Button = styled.button`
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    transition: 0.3s;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
     outline: none;
     

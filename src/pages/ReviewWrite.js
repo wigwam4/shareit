@@ -4,7 +4,7 @@ import { Label } from '../elements/Label';
 import { Textarea } from '../elements/Textarea';
 import { ContentTitle } from '../elements/Title';
 import { ImageBox } from '../components/ImageBox';
-import { AttachFile, FileAttached, BtnDel } from '../components/Attachment';
+import { AttachmentSwiper } from '../components/AttachmentSwiper';
 import module from './ReviewWrite.module.css';
 
 const ReviewWrite = ({ ReviewData }) => {
@@ -77,17 +77,9 @@ const ReviewWrite = ({ ReviewData }) => {
 						<span className={ module.tiptext_right }>0/1,000</span>
 					</div>
 				</div>
-				<div className={ module.review_section }>
-					<p className={ module.review_question }>포토 첨부 (최대 5장)</p>
-					<div>
-						<AttachFile />
-						<FileAttached>
-							<ImageBox>
-								<img src='' alt='' />
-							</ImageBox>
-							<BtnDel />
-						</FileAttached>
-					</div>
+				<div className={`${ module.review_section } ${ module.section_full }`}>
+					<p className={ module.review_question } style={{ marginBottom: 0 }}>포토 첨부 (최대 5장)</p>
+					<AttachmentSwiper />
 					<div className={ module.tiptext_area }>
 						<p className={ module.alert_message }>이미지 파일만 등록해 주세요.</p>
 						<span className={ module.tiptext_right }>포토당 최대 15MB</span>
